@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThienNhan PHOTO</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app">
+    <nav class="navbar">
+      <a href="#home" class="logo">ThienNhan<span>PHOTO</span></a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#about" data-i18n="nav.about">Giới thiệu</a>
+          <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="#services" data-i18n="nav.services">Dịch vụ</a>
+          <a href="#contact" data-i18n="nav.contact">Liên hệ</a>
+        </div>
+        <button class="lang-toggle" id="langToggle"><span id="currentLang">VI</span><small id="nextLang">EN</small></button>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="circle circle-one"></div><div class="circle circle-two"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow">Portfolio nhiếp ảnh chuyên nghiệp</p>
+        <h1><span data-i18n="heroTitle1">Ghi lại cảm xúc,</span><br><span data-i18n="heroTitle2">ánh sáng & câu chuyện vượt thời gian.</span></h1>
+        <p class="hero-desc" data-i18n="heroDesc">Portfolio cá nhân dành cho nhiếp ảnh gia, phù hợp chụp sự kiện, chân dung, lifestyle và thương mại.</p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn primary-btn" data-i18n="viewPortfolio">Xem Portfolio</a>
+          <a href="#contact" class="btn ghost-btn" data-i18n="booking">Liên hệ Booking</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <div class="main-photo-frame photo-placeholder">
+          <img src="./images/photo1.jpg" alt="Hero"><div class="placeholder-text" data-i18n="addHero">THÊM ẢNH HERO</div>
+        </div>
+        <div class="floating-card card-top"><h3>50+</h3><p>Projects</p></div>
+        <div class="floating-card card-bottom"><h3>4.9</h3><p>Rating</p></div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-title reveal"><p data-i18n="aboutSmall">Giới thiệu</p><h2 data-i18n="aboutTitle">Người kể chuyện bằng hình ảnh</h2></div>
+      <div class="about-grid">
+        <div class="about-image photo-placeholder reveal"><img src="./images/photo2.jpg" alt="About"><div class="placeholder-text" data-i18n="addAbout">THÊM ẢNH GIỚI THIỆU</div></div>
+        <div class="about-content reveal">
+          <h3 data-i18n="aboutName">Xin chào, mình là Thiện Nhân.</h3>
+          <p data-i18n="aboutDesc">Mình ghi lại những khoảnh khắc tự nhiên, cảm xúc thật. Portfolio này được thiết kế để thể hiện phong cách nhiếp ảnh chuyên nghiệp, hiện đại và có chiều sâu thị giác.</p>
+          <div class="stats"><div><h4>2+</h4><span data-i18n="years">Năm kinh nghiệm</span></div><div><h4>20+</h4><span data-i18n="clients">Khách hàng hài lòng</span></div><div><h4>80+</h4><span data-i18n="events">Sự kiện đã chụp</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="section-title reveal"><p data-i18n="selectedWorks">Dự án nổi bật</p><h2 data-i18n="portfolioTitle">Bộ sưu tập hình ảnh</h2></div>
+      <div class="filter-buttons reveal" id="filterButtons"></div>
+      <div class="gallery album-gallery" id="gallery"></div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-title reveal"><p data-i18n="servicesSmall">Dịch vụ</p><h2 data-i18n="servicesTitle">Mình chụp gì?</h2></div>
+      <div class="services-grid">
+        <div class="service-card reveal"><span>01</span><h3 data-i18n="service1Title">Chụp ảnh sự kiện</h3><p data-i18n="service1Desc">Chụp sự kiện, hội thảo, workshop, sinh nhật và hoạt động truyền thông.</p></div>
+        <div class="service-card reveal"><span>02</span><h3 data-i18n="service2Title">Chụp chân dung</h3><p data-i18n="service2Desc">Chụp chân dung cá nhân, profile, tốt nghiệp, concept ngoài trời, sinh nhật và ảnh thương hiệu cá nhân.</p></div>
+        <div class="service-card reveal"><span>03</span><h3 data-i18n="service3Title">Chụp thể thao</h3><p data-i18n="service3Desc">Ghi lại khoảnh khắc nảy lửa của các pha tranh chấp thể thao.</p></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-box reveal"><p data-i18n="contactSmall">Cùng tạo nên những khung hình đẹp</p><h2 data-i18n="contactTitle">Đặt lịch chụp ngay hôm nay</h2><button class="btn primary-btn contact-btn" id="openContact"><span data-i18n="contactBtn">Liên hệ ngay</span></button></div>
+    </section>
+    <footer><p data-i18n="footer">© 2026 ThienNhanPhoto.</p></footer>
+  </div>
+
+  <div class="album-modal hidden" id="albumModal"><div class="album-modal-box"><button class="modal-close" id="closeAlbum">×</button><p class="modal-eyebrow" id="albumCategory"></p><h2 id="albumTitle"></h2><p class="album-desc" id="albumDesc"></p><div class="album-photo-list" id="albumPhotoList"></div></div></div>
+  <div class="contact-modal hidden" id="contactModal"><div class="contact-modal-box"><button class="modal-close" id="closeContact">×</button><p class="modal-eyebrow" data-i18n="modalSmall">Thông tin booking</p><h2 data-i18n="modalTitle">Liên hệ chụp ảnh</h2><p class="modal-desc" data-i18n="modalDesc">Bạn có thể liên hệ mình để booking lịch chụp sự kiện, chân dung, couple, kỷ yếu hoặc ảnh cá nhân.</p><div class="contact-info-list"><a href="tel:0942003937"><span data-i18n="phone">Số điện thoại</span><strong>0942 003 937</strong></a><a href="mailto:thiennhan09420@gmail.com"><span data-i18n="email">Email</span><strong>thiennhan09420@gmail.com</strong></a><a href="https://www.facebook.com/thiennhan1601?locale=vi_VN" target="_blank" rel="noreferrer"><span data-i18n="facebook">Facebook</span><strong>facebook.com/Thiệnn Nhânn</strong></a><a href="https://zalo.me/0942003937" target="_blank" rel="noreferrer"><span data-i18n="zalo">Zalo</span><strong>Thiệnn Nhânn</strong></a></div></div></div>
+  <div class="lightbox hidden" id="lightbox"><button class="close-btn" id="closeLightbox">×</button><img id="lightboxImg" src="" alt=""><div class="lightbox-info"><p id="lightboxAlbum"></p><h3 id="lightboxTitle"></h3></div></div>
+  <script src="./script.js"></script>
+</body>
+</html>
