@@ -7,7 +7,7 @@ const photos = [
     viTitle: "Hàng cây Hàn Quốc",
     enTitle: "Korea's Trees",
     category: "natural",
-    src: "./photo1.jpg",
+    src: "/photo1.jpg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const photos = [
     viTitle: "Hoa vàng hoàng hôn",
     enTitle: "Sunset Behind Yellow Flower",
     category: "natural",
-    src: "./hoaloenang.jpg",
+    src: "/hoaloenang.jpg",
     albumOnly: true,
   },
   {
@@ -28,7 +28,7 @@ const photos = [
     viTitle: "Một ngàn bông hoa",
     enTitle: "A Thousand Flowers",
     category: "natural",
-    src: "./hoaa74.jpg",
+    src: "/hoaa74.jpg",
     albumOnly: true,
   },
   {
@@ -39,7 +39,7 @@ const photos = [
     viTitle: "Du lịch về nguồn",
     enTitle: "Heritage Trip",
     category: "travel",
-    src: "./thy.jpg",
+    src: "/thy.jpg",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const photos = [
     viTitle: "Góc nghiêng trung cảnh",
     enTitle: "Medium Side Angle",
     category: "travel",
-    src: "./nhan.jpg",
+    src: "/nhan.jpg",
     albumOnly: true,
   },
   {
@@ -60,7 +60,7 @@ const photos = [
     viTitle: "Khoảnh khắc du lịch",
     enTitle: "Travel Moment",
     category: "travel",
-    src: "./3nggoccayto.jpg",
+    src: "/3nggoccayto.jpg",
     albumOnly: true,
   },
   {
@@ -71,7 +71,7 @@ const photos = [
     viTitle: "Lễ tốt nghiệp 2025",
     enTitle: "Graduation Ceremony 2025",
     category: "event",
-    src: "./photo3.jpg",
+    src: "/photo3.jpg",
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ const photos = [
     viTitle: "Chủ nhật Đỏ 2026",
     enTitle: "Red Sunday 2026",
     category: "event",
-    src: "./CNĐ.jpg",
+    src: "/CNĐ.jpg",
     albumOnly: true,
   },
   {
@@ -92,7 +92,7 @@ const photos = [
     viTitle: "Báo cáo kết thúc môn - ĐH Sân Khấu Điện Ảnh",
     enTitle: "Final Course Report - Theater and Cinema University",
     category: "event",
-    src: "./SKDA.jpg",
+    src: "/SKDA.jpg",
     albumOnly: true,
   },
   {
@@ -103,7 +103,7 @@ const photos = [
     viTitle: "Trứng cầu Sài Gòn",
     enTitle: "Saigon Bridge Frame",
     category: "street",
-    src: "./photo4.jpg",
+    src: "/photo4.jpg",
   },
   {
     id: 11,
@@ -113,7 +113,7 @@ const photos = [
     viTitle: "Khung hình đô thị",
     enTitle: "Urban Frame",
     category: "street",
-    src: "./CauBaSon.jpg",
+    src: "/CauBaSon.jpg",
     albumOnly: true,
   },
   {
@@ -124,7 +124,7 @@ const photos = [
     viTitle: "Nhịp sống thành phố",
     enTitle: "City Lifestyle",
     category: "street",
-    src: "./street1.jpg",
+    src: "/street1.jpg",
     albumOnly: true,
   },
   {
@@ -135,7 +135,7 @@ const photos = [
     viTitle: "Ảnh thể thao",
     enTitle: "Sport Photograph",
     category: "sport",
-    src: "./K18KL-20.JPG",
+    src: "/K18KL-20.JPG",
   },
   {
     id: 14,
@@ -145,7 +145,7 @@ const photos = [
     viTitle: "Pha tranh chấp",
     enTitle: "Challenge Moment",
     category: "sport",
-    src: "./VHE-13.JPG",
+    src: "/VHE-13.JPG",
     albumOnly: true,
   },
   {
@@ -156,7 +156,7 @@ const photos = [
     viTitle: "Khoảnh khắc thi đấu",
     enTitle: "Match Moment",
     category: "sport",
-    src: "./VHE-12.JPG",
+    src: "/VHE-12.JPG",
     albumOnly: true,
   },
   {
@@ -167,7 +167,7 @@ const photos = [
     viTitle: "Ngày hội cấp trường",
     enTitle: "School Festival",
     category: "event",
-    src: "./school-event1.jpg",
+    src: "/school-event1.jpg",
   },
   {
     id: 17,
@@ -177,7 +177,7 @@ const photos = [
     viTitle: "Hoạt động sinh viên",
     enTitle: "Student Activity",
     category: "event",
-    src: "./school-event2.jpg",
+    src: "/school-event2.jpg",
     albumOnly: true,
   },
   {
@@ -188,7 +188,7 @@ const photos = [
     viTitle: "Khoảnh khắc sân khấu",
     enTitle: "Stage Moment",
     category: "event",
-    src: "./school-event3.jpg",
+    src: "/school-event3.jpg",
     albumOnly: true,
   },
 ];
